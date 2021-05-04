@@ -1,14 +1,11 @@
+package Curso_java;
 
-import java.util.Locale;
-import java.util.Scanner; // import the Scanner class 
+import java.util.Scanner;  
 
 
 class TestaScanner {
-  public static void main (String[] args) {
-	 
-	  //Locale.setDefault(Locale.US);
-	 
-	 // Locale localeBR = new Locale("pt","BR");  
+	public static void main(String[] args) { 
+
 	  
     Scanner Registro = new Scanner(System.in);
     

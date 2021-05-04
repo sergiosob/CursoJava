@@ -50,6 +50,7 @@ public class Calculadora {
 	    System.out.print("Operação: ");  
 	    
 	    opcao = input.nextInt();
+	    input.close();
 	    
 	    while (opcao != 0) {
 	    	
@@ -66,11 +67,12 @@ public class Calculadora {
 	    		int operacao = c.som(num1, num2);
 	    		System.out.println("Resultado");
 	    		System.out.println(operacao);
+	    		input1.close();
 	    		break;
 	    	}
 	    	 	if (opcao == 2) {
 		    		
-	    	 		  Scanner input1 = new Scanner(System.in);  
+	    	 		Scanner input1 = new Scanner(System.in);  
 	    	  	      
 	  	    		System.out.print("Qual o primeiro numero: ");
 	  	    		 num1 = input1.nextInt();
@@ -79,6 +81,7 @@ public class Calculadora {
 	  	    		int operacao = c.sub(num1, num2);
 	  	    		System.out.println("Resultado");
 	  	    		System.out.println(operacao);
+	  	    		input1.close();
 		    		
 		    		break;
 		    		}
@@ -92,6 +95,7 @@ public class Calculadora {
 		  	    		int operacao = c.mult(num1, num2);
 		  	    		System.out.println("Resultado");
 		  	    		System.out.println(operacao);
+		  	    		input1.close();
 			    		break;
 		    	 	}
 			    	 	if (opcao == 4) {
@@ -104,13 +108,15 @@ public class Calculadora {
 			  	    		int operacao = c.div(num1, num2);
 			  	    		System.out.println("Resultado");
 			  	    		System.out.println(operacao);
+			  	    		input1.close();
 				    		break;
 				    		}
 			    	 	else{
 					    	System.out.print("????");
 					    	break;
 					    		}
-				    
+			    	 	
 	    }
 	}
 }
+

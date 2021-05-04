@@ -1,9 +1,9 @@
-
+package Curso_java;
 public class BalancoTrimestral{
 
     public static void main(String args[]){
 		// miolo do programa
-		int gastosjaneiro = 15000;
+	   int gastosjaneiro = 15000;
        int gastosfevereiro = 23000;
 	   int gastosmarco = 17000;
 	   int gastostrimestre = 0;
